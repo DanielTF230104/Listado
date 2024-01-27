@@ -1,0 +1,142 @@
+/******************************************************/
+/*      estilo del listado de empleados               */
+/*      CRUD de Actividad de Lenguaje de Marcas       */
+/*      autor: Daniel Trujillo                        */
+/*      REASON: PROYECT CLASS                         */
+/******************************************************/
+
+/********************* estilo general **********************************/
+
+
+/********************* estilo tabla **********************************/
+
+caption {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+caption {
+    color: white;
+}
+
+caption {
+    display: table-caption;
+    text-align: -webkit-center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+#container {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #27a129, #d50000);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    font-weight: bold;
+    padding: 10px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    margin-bottom: 2px;
+    border-radius: 5px;
+  }
+  
+  .edit {background-color: #02a00d;} /* Green */
+  .edit:hover {background-color: #73cc76;}
+  
+  .info {background-color: #4faefd;} /* Blue */
+  .info:hover {background: #025ba4;}
+  
+  .warning {background-color: #ffa724;} /* Orange */
+  .warning:hover {background: #ba7002;}
+  
+  .delete {background-color: #ff4f43;} /* Red */
+  .delete:hover {background: #a70f04;}
+  
+  .default {background-color: #e7e7e7; color: black;} /* Gray */
+  .default:hover {background: #ddd;}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #aef139;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+}
