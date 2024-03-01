@@ -7,6 +7,11 @@
 
 /********************* estilo general **********************************/
 
+.container{width: 80%;
+		   margin: auto;
+		   height: 80vh;
+		   overflow: auto;
+		   font-family: Arial, Helvetica, sans-serif;}
 
 /********************* estilo tabla **********************************/
 
@@ -14,25 +19,17 @@ caption {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 20px;
-}
-caption {
-    color: white;
-}
-
-caption {
-    display: table-caption;
+	color: white;
+	display: table-caption;
     text-align: -webkit-center;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
+	overflow: scroll;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
 
 table {
     border-collapse: separate;
@@ -57,9 +54,33 @@ body {
 
 body {
 	margin: 0;
-	background: linear-gradient(45deg, #27a129, #d50000);
+	background-color: #15103e;
 	font-family: sans-serif;
 	font-weight: 100;
+}
+
+.background .shape{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #006503,
+        #00d319
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #9f0000,
+        #ec0000
+    );
+    right: -30px;
+    bottom: -80px;
 }
 
 .btn {
@@ -72,26 +93,27 @@ body {
     border-radius: 5px;
   }
   
-  .edit {background-color: #02a00d;} /* Green */
-  .edit:hover {background-color: #73cc76;}
+  .edit {background-color: #6c008d88;} /* Green */
+  .edit:hover {background-color: rgba(255,255,255,0.27);}
   
-  .info {background-color: #4faefd;} /* Blue */
-  .info:hover {background: #025ba4;}
+  .info {background-color: #6c008d88;} /* Blue */
+  .info:hover {background-color: rgba(255,255,255,0.27);}
   
-  .warning {background-color: #ffa724;} /* Orange */
-  .warning:hover {background: #ba7002;}
+  .warning {background-color: #6c008d88;} /* Orange */
+  .warning:hover {background-color: rgba(255,255,255,0.27);}
   
-  .delete {background-color: #ff4f43;} /* Red */
-  .delete:hover {background: #a70f04;}
+  .delete {background-color: #6c008d88;} /* Red */
+  .delete:hover {background-color: rgba(255,255,255,0.27);}
   
-  .default {background-color: #e7e7e7; color: black;} /* Gray */
-  .default:hover {background: #ddd;}
+  .default {background-color: #6c008d88;} /* Gray */
+  .default:hover {background-color: rgba(255,255,255,0.27);}
 
 .container {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	overflow: scroll;
 }
 
 table {
@@ -114,7 +136,7 @@ th {
 
 thead {
 	th {
-		background-color: #aef139;
+		background-color: rgba(188, 11, 188, 0.13);
 	}
 }
 
