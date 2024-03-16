@@ -67,8 +67,8 @@ body {
 }
 .shape:first-child{
     background: linear-gradient(
-        #006503,
-        #00d319
+        #006559,
+        #00d3c1
     );
     left: -80px;
     top: -80px;
@@ -76,8 +76,8 @@ body {
 .shape:last-child{
     background: linear-gradient(
         to right,
-        #9f0000,
-        #ec0000
+        #9f0077,
+        #ec00cc
     );
     right: -30px;
     bottom: -80px;
@@ -93,6 +93,8 @@ body {
     border-radius: 5px;
   }
   
+  .delete{confirm("Press a button!");
+}
   .edit {background-color: #6c008d88;} /* Green */
   .edit:hover {background-color: rgba(255,255,255,0.27);}
   
